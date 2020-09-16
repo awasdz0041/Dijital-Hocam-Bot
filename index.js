@@ -72,7 +72,7 @@ bot.hears(/Coğrafya/ig, async (ctx, next) => {
 });
       
 bot.hears(/A/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, 'Sorun başarıyla iletildi. En kısa sürede sorunun çözümü 👉<a href="https://t.me/dijitalhocamsoruhavuzu">Sorular ve Cevaplar</a> kanalında paylaşılacaktır.😊\n ')
+        ctx.telegram.sendMessage(ctx.chat.id, 'Sorun başarıyla iletildi. En kısa sürede sorunun çözümü 👉<a>href="https://t.me/dijitalhocamsoruhavuzu">Sorular ve Cevaplar</a> kanalında paylaşılacaktır.😊\n ')
     return next();
     
 });
