@@ -43,12 +43,6 @@ bot.hears(/E/ig, async (ctx, next) => {
     
 });   
 
-bot.hears(/ilmiyorum/ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});   
-
 
 bot.command('yenisoru', async (ctx, next) => {
     ctx.telegram.sendMessage(ctx.chat.id, 'Sorun hangi derse ait yazar mısın?\n👉🏻Türkçe\n👉🏻Matematik\n👉🏻Geometri\n👉🏻Fizik\n👉🏻Kimya\n👉🏻Biyoloji\n👉🏻Türk Dili ve Edebiyatı\n👉🏻Tarih\n👉🏻Coğrafya')
