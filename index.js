@@ -53,6 +53,12 @@ bot.command('yenisoru', async (ctx, next) => {
     ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorun hangi derse ait yazar mısın?</b>\n👉🏻Türkçe\n👉🏻Matematik\n👉🏻Geometri\n👉🏻Fizik\n👉🏻Kimya\n👉🏻Biyoloji\n👉🏻Türk Dili ve Edebiyatı\n👉🏻Tarih\n👉🏻Coğrafya',{ parse_mode: 'HTML' })
     return next();
     
+}); 
+
+bot.command('yardim', async (ctx, next) => {
+    ctx.telegram.sendMessage(ctx.chat.id, 'https://www.youtube.com/watch?v=dhqt5HHI-dk')
+    return next();  
+    
 });
 
 bot.hears(/Matematik/ig, async (ctx, next) => {
