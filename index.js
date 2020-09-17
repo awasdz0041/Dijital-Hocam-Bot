@@ -13,37 +13,37 @@ bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kul
                     
 }); 
 
-bot.hears('A'ig, async (ctx, next) => {
+bot.hears('A', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
 });  
 
-bot.hears('B'ig, async (ctx, next) => {
+bot.hears('B', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
 });  
 
-bot.hears('C'ig, async (ctx, next) => {
+bot.hears('C', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
 });   
 
-bot.hears('D'ig, async (ctx, next) => {
+bot.hears('D', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
 });   
 
-bot.hears('E'ig, async (ctx, next) => {
+bot.hears('E', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
 });  
 
-bot.hears('Bilmiyorum'ig, async (ctx, next) => {
+bot.hears('Bilmiyorum', async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
