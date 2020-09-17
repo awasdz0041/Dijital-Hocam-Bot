@@ -9,7 +9,7 @@ const bot       = new Telegraf(BOT_API);
 
 const buton = { reply_markup: { inline_keyboard: [[ { text: 'Sorular ve Cevaplar Kanalı', url: 't.me/dijitalhocamsoruhavuzu' } ]] }}
     
-bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kullanabilirsiniz.\n\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.\n/yardim - Bot kullanım kılavuzunu açar")
+bot.start((ctx) => { return ctx.reply("<b>Aşağıdaki kodları kullanarak botu kullanabilirsiniz.</b>\n\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.\n/yardim - Bot kullanım kılavuzunu açar",{ parse_mode: 'HTML' })
                     
 }); 
 
