@@ -7,20 +7,11 @@ const URL           = process.env.URL
 const Telegraf  = require("telegraf");
 const bot       = new Telegraf(BOT_API);
 
-const buton = { reply_markup: { inline_keyboard: [[ { text: 'Kanal', url: 't.me/botsohbet' } ]] }}
 
 });
 
 bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kullanabilirsiniz.\n/yardim - Bot kullanım kılavuzunu açar\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.")
-
-});
-
-
-bot.hears(/bota verilen cevap/ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorular ve Cevaplar', buton)
-    return next();
     
-
 });
 
 bot.command('yenisoru', async (ctx, next) => {
@@ -84,7 +75,7 @@ bot.hears(/Coğrafya/ig, async (ctx, next) => {
 });
       
 bot.hears(/A/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, 'Sorun başarıyla iletildi. En kısa sürede sorunun çözümü 👉<a>href="https://t.me/dijitalhocamsoruhavuzu">Sorular ve Cevaplar</a> kanalında paylaşılacaktır.😊\n ')
+        ctx.telegram.sendMessage(ctx.chat.id, 'Sorun başarıyla iletildi. En kısa sürede sorunun çözümü 👉<a href="https://t.me/dijitalhocamsoruhavuzu">Sorular ve Cevaplar</a> kanalında paylaşılacaktır.😊',{ parse_mode: 'HTML' })
     return next();
     
 });
