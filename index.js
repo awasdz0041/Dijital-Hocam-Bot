@@ -8,8 +8,6 @@ const Telegraf  = require("telegraf");
 const bot       = new Telegraf(BOT_API);
 
 
-});
-
 bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kullanabilirsiniz.\n/yardim - Bot kullanım kılavuzunu açar\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.")
     
 });
