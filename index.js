@@ -56,55 +56,55 @@ bot.command('yenisoru', async (ctx, next) => {
 });
 
 bot.hears(/Matematik/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Türkçe/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Geometri/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Fizik/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Kimya/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Biyoloji/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Türk Dili ve Edebiyatı/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Tarih/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
 
 bot.hears(/Coğrafya/ig, async (ctx, next) => {
-        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>')
+        ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorunun net okunalı bir fotoğrafını atabilir misin?</b>',{ parse_mode: 'HTML' })
     return next();
     
 });
