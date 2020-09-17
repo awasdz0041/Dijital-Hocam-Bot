@@ -10,45 +10,8 @@ const bot       = new Telegraf(BOT_API);
 const buton = { reply_markup: { inline_keyboard: [[ { text: 'Sorular ve Cevaplar Kanalı', url: 't.me/dijitalhocamsoruhavuzu' } ]] }}
     
 bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kullanabilirsiniz.\n/yardim - Bot kullanım kılavuzunu açar\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.")
-    
-});
-
-bot.hears('A'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});  
-
-bot.hears('B'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});  
-
-bot.hears('C'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
+                    
 });   
-
-bot.hears('D'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});   
-
-bot.hears('E'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});  
-
-bot.hears('Bilmiyorum'ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
-    return next();
-    
-});   
-
 
 bot.command('yenisoru', async (ctx, next) => {
     ctx.telegram.sendMessage(ctx.chat.id, 'Sorun hangi derse ait yazar mısın?\n👉🏻Türkçe\n👉🏻Matematik\n👉🏻Geometri\n👉🏻Fizik\n👉🏻Kimya\n👉🏻Biyoloji\n👉🏻Türk Dili ve Edebiyatı\n👉🏻Tarih\n👉🏻Coğrafya')
