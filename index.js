@@ -43,7 +43,7 @@ bot.hears(/E/ig, async (ctx, next) => {
     
 });   
 
-bot.hears(/Bilmiyorum/ig, async (ctx, next) => {
+bot.hears(/ilmiyorum/ig, async (ctx, next) => {
         await ctx.replyWithHTML('Sorun başarıyla iletildi. En kısa sürede sorunun çözümü <b>Sorular ve Cevaplar</b> kanalında paylaşılacaktır.😊', buton)
     return next();
     
