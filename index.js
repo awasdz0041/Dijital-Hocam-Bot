@@ -8,12 +8,7 @@ const Telegraf  = require("telegraf");
 const bot       = new Telegraf(BOT_API);
 
 const buton = { reply_markup: { inline_keyboard: [[ { text: 'Kanal', url: 't.me/botsohbet' } ]] }}
-
-bot.hears(/bota verilen cevap/ig, async (ctx, next) => {
-        await ctx.replyWithHTML('Sorular ve Cevaplar', buton)
-    return next();
     
-
 bot.start((ctx) => { return ctx.reply("Aşağıdaki kodları kullanarak botu kullanabilirsiniz.\n/yardim - Bot kullanım kılavuzunu açar\n/yenisoru - Yeni soru sormak için ilk önce komutu yazmalısın.")
     
 });
