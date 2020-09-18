@@ -50,7 +50,7 @@ bot.hears('Bilmiyorum', async (ctx, next) => {
 }); 
 
 bot.command('yenisoru', async (ctx, next) => {
-    ctx.telegram.sendMessage(ctx.chat.id, '<b>Sorun hangi derse ait yazar mısın?</b>\n👉🏻Türkçe\n👉🏻Matematik\n👉🏻Geometri\n👉🏻Fizik\n👉🏻Kimya\n👉🏻Biyoloji\n👉🏻Türk Dili ve Edebiyatı\n👉🏻Tarih\n👉🏻Coğrafya',{ parse_mode: 'HTML' })
+    ctx.telegram.sendMessage(ctx.chat.id, '<b>${first_name} ${last_name} sorun hangi derse ait yazar mısın?</b>\n👉🏻Türkçe\n👉🏻Matematik\n👉🏻Geometri\n👉🏻Fizik\n👉🏻Kimya\n👉🏻Biyoloji\n👉🏻Türk Dili ve Edebiyatı\n👉🏻Tarih\n👉🏻Coğrafya',{ parse_mode: 'HTML' })
     return next();
     
 }); 
