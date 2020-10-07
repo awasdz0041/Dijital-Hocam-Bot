@@ -6,8 +6,7 @@ module.exports = {
 
             'Swearing.js',
             'MildSwearing.js',
-            'DublicateMessage.js',
-            'soru.js'
+            'DublicateMessage.js'
 
         ]
 
